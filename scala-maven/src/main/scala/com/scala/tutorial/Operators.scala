@@ -10,7 +10,7 @@ object Operators extends App {
 
   if (age > 13 && age < 30)
     println("You are the Junior Java Developer!!!!");
-  if (age == 13)
+  if (age <= 13)
     println("You are the Junior Scala Developer!!!");
   else
     println("You are the Senior Java Developer!!");
