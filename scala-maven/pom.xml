@@ -20,6 +20,17 @@
             <version>2.11.7</version>
         </dependency>
         <dependency>
+            <groupId>com.typesafe.akka</groupId>
+            <artifactId>akka-actor_2.11</artifactId>
+            <version>2.4.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.typesafe.akka</groupId>
+            <artifactId>akka-camel_2.11</artifactId>
+            <version>2.4.2</version>
+        </dependency>
+
+        <dependency>
             <groupId>org.specs2</groupId>
             <artifactId>specs2-core_2.11</artifactId>
             <version>${specs2.version}</version>
@@ -49,7 +60,23 @@
             <version>${specs2.version}</version>
             <scope>test</scope>
         </dependency>
-       
+        <dependency>
+            <groupId>org.scalatest</groupId>
+            <artifactId>scalatest_2.9.2</artifactId>
+            <version>1.9.2</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-compiler</artifactId>
+            <version>2.11.7</version>
+        </dependency>
 
         <dependency>
             <groupId>ch.qos.logback</groupId>
@@ -126,5 +153,40 @@
             </plugin>
         </plugins>
     </build>
+     
+    <repositories>
+        <repository>
+            <id>central</id>
+            <name>Maven central</name>
+            <url>http://repo1.maven.org</url>
+        </repository>
+        <repository>
+            <id>scala-tools.org</id>
+            <name>Scala-tools Maven2 Repository</name>
+            <url>http://scala-tools.org/repo-releases</url>
+        </repository>
+        <repository>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <id>typesafe-releases</id>
+            <name>releases</name>
+            <url>http://repo.typesafe.com/typesafe/releases</url>
+        </repository>
+        <repository>
+            <snapshots />
+            <id>typesafe-snapshots</id>
+            <name>snapshots</name>
+            <url>http://repo.typesafe.com/typesafe/snapshots</url>
+        </repository>
+        <repository>
+            <id>akka-snapshots</id>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <url>http://repo.akka.io/snapshots/</url>
+        </repository>
+    </repositories>
+
 
 </project>
