@@ -4,8 +4,6 @@ import akka.actor.Actor
 import akka.actor.ActorSystem
 import akka.actor.Props
 
-
-
 object ScalaAkka extends App {
   // an actor needs an ActorSystem
   val system = ActorSystem("HelloSystem")
